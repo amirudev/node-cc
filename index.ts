@@ -155,7 +155,7 @@ app.post('/chat/generate/', async (req, res) => {
     ])
 
     // delete first "```json" and last "```"
-    resultCleaned = result.response.text().replace("```json", "").replace("```", "");
+    let resultCleaned = result.response.text().replace("```json", "").replace("```", "");
 
     res.status(200).send(resultCleaned);
 })
