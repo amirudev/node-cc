@@ -54,3 +54,5 @@ CREATE TABLE CustomerNote
     CustomerID INT REFERENCES Customer (ID),
     Notes      TEXT NOT NULL
 );
+
+ALTER TABLE Customer ADD COLUMN Platform VARCHAR(255);
